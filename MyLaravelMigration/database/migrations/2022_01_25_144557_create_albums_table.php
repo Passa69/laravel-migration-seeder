@@ -20,8 +20,8 @@ class CreateAlbumsTable extends Migration
             $table->tinyInteger('artist_id');
             $table->text('description') -> nullable();
             $table->date('date_of_release');
-            $table->integer('number_of_listeners');
-            $table->integer('number_of_copies_sold');
+            $table->integer('number_of_listeners') -> unsigned() -> default(0);
+            $table->integer('number_of_copies_sold') -> unsigned() -> default(0);
             
 
             $table->timestamps();

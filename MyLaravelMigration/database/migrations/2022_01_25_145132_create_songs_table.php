@@ -21,7 +21,7 @@ class CreateSongsTable extends Migration
             $table->boolean('single') -> nullable();
             $table->date('date_of_release') -> nullable();
             $table->string('featuring', 50) -> nullable();
-            $table->integer('number_of_listeners');
+            $table->integer('number_of_listeners') -> unsigned() -> default(0);
 
             $table->timestamps();
         });
