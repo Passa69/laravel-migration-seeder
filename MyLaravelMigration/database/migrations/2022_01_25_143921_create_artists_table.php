@@ -23,7 +23,6 @@ class CreateArtistsTable extends Migration
             $table->year('year_of_debut');
             $table->string('name_band', 50) -> nullable();
 
-            $table->timestamps();
         });
     }
 

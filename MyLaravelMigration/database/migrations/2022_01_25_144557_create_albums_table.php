@@ -21,9 +21,6 @@ class CreateAlbumsTable extends Migration
             $table->date('date_of_release');
             $table->bigInteger('number_of_listeners') -> unsigned() -> default(0);
             $table->bigInteger('number_of_copies_sold') -> unsigned() -> default(0);
-            
-
-            $table->timestamps();
         });
     }
 

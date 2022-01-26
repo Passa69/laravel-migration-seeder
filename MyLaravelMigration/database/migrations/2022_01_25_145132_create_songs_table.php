@@ -23,8 +23,6 @@ class CreateSongsTable extends Migration
             $table->string('genre', 50);
             $table->integer('duration') -> unsigned();
             $table->bigInteger('number_of_listeners') -> unsigned() -> default(0);
-
-            $table->timestamps();
         });
     }
 
