@@ -17,11 +17,12 @@ class CreateSongsTable extends Migration
             $table->id();
 
             $table->string('name', 20);
-            $table->tinyInteger('album_id');
             $table->boolean('single') -> nullable() -> default(false);
             $table->date('date_of_release') -> nullable();
             $table->string('featuring', 50) -> nullable();
-            $table->integer('number_of_listeners') -> unsigned() -> default(0);
+            $table->string('genre', 50);
+            $table->integer('duration') -> unsigned();
+            $table->bigInteger('number_of_listeners') -> unsigned() -> default(0);
 
             $table->timestamps();
         });
