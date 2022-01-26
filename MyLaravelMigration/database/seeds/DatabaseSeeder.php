@@ -13,7 +13,8 @@ class DatabaseSeeder extends Seeder
     {
         $this->call([
             SongSeeder::class,
-            AlbumSeeder::class
+            AlbumSeeder::class,
+            ArtistSeeder::class
         ]);
     }
 }

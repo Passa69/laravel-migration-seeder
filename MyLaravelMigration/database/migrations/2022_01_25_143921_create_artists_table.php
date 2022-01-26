@@ -16,12 +16,12 @@ class CreateArtistsTable extends Migration
         Schema::create('artists', function (Blueprint $table) {
             $table->id();
 
-            $table->string('name', 10);
-            $table->string('surname', 15);
-            $table->string('stage_name', 15) -> nullable();
+            $table->string('name', 50);
+            $table->string('surname', 50);
+            $table->string('stage_name', 50) -> nullable();
             $table->date('date_of_birth');
             $table->year('year_of_debut');
-            $table->string('name_band', 20) -> nullable();
+            $table->string('name_band', 50) -> nullable();
 
             $table->timestamps();
         });
