@@ -18,7 +18,7 @@ class CreateSongsTable extends Migration
 
             $table->string('name', 20);
             $table->tinyInteger('album_id');
-            $table->boolean('single') -> nullable();
+            $table->boolean('single') -> nullable() -> default(false);
             $table->date('date_of_release') -> nullable();
             $table->string('featuring', 50) -> nullable();
             $table->integer('number_of_listeners') -> unsigned() -> default(0);
